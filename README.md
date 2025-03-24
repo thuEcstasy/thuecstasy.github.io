@@ -1,1 +1,1 @@
-Ecstasy's blog
+# Ecstasy's blog
