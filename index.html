@@ -103,10 +103,11 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="1-什么是-Model-Quantization-模型量化-，为什么要这样做？"><a href="#1-什么是-Model-Quantization-模型量化-，为什么要这样做？" class="headerlink" title="1 什么是 Model Quantization (模型量化)，为什么要这样做？"></a>1 什么是 Model Quantization (模型量化)，为什么要这样做？</h2><p>Quantization 是一种在保证模型的结构不发生变化的条件下，通过降低模型参数的精度 (bitrate) 或模型 forward 过程中的中间值的精度，从而加速模型的推理效率，减少推理过程中的显存开销的方法。</p>
+        <h2 id="1-什么是-Model-Quantization-模型量化-？为什么要这样做？"><a href="#1-什么是-Model-Quantization-模型量化-？为什么要这样做？" class="headerlink" title="1 什么是 Model Quantization (模型量化)？为什么要这样做？"></a>1 什么是 Model Quantization (模型量化)？为什么要这样做？</h2><p>Quantization 是一种在保证模型的结构不发生变化的条件下，通过降低模型参数的精度 (bitrate) 或模型 forward 过程中的中间值的精度，从而加速模型的推理效率，减少推理过程中的显存开销的方法。</p>
 <p>现在的 SOTA 可以基本做到 2 bits 的低损失量化，这可以使得模型 decoding 效率加速 3 倍，这是一个惊人的表现。</p>
 <p><img src="/images/qtip_inference.png" alt="QTIP 2 bits post training quantization"></p>
 <p>上图为 <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2410.13780">QTIP</a> 2 bits 量化在 Llama 3-405B 模型上的推理示例。</p>
+<h2 id="2-Quantization-领域的研究分支和进展-Updated-March-24th-2025"><a href="#2-Quantization-领域的研究分支和进展-Updated-March-24th-2025" class="headerlink" title="2 Quantization 领域的研究分支和进展 (Updated: March 24th, 2025)"></a>2 Quantization 领域的研究分支和进展 (Updated: March 24th, 2025)</h2><p>可以参考这篇文章：<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2409.16694">A Survey of Low-bit Large Language Models: Basics, Systems, and Algorithms</a></p>
 
       
     </div>
