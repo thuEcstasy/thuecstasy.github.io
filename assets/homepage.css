@@ -1,0 +1,43 @@
+/* Small additions to the upstream Jon Barron template: centered profile, metadata, and accessibility. */
+:root{color-scheme:light}
+body{margin:8px;background:#fff;color:#111;line-height:1.5;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a:focus-visible{outline:2px solid #1772d0;outline-offset:3px}
+.centered-bio{display:flex;flex-direction:column;padding-top:28px}
+.centered-bio .bio-photo{width:100%;padding:0 20px;text-align:center}
+.centered-bio .bio-photo img{width:190px;height:190px;margin:0 auto;object-fit:cover}
+.centered-bio .bio-text{width:100%;padding:0 20px}
+.centered-bio .name{margin:18px 0 20px;padding:0;font-size:32px}
+.chinese-name{font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:22px;color:#555;font-weight:400;margin-left:8px}
+.bio-text p{margin:12px 0}
+.bio-links{margin-top:18px!important;margin-bottom:10px!important}
+.bio-links a{white-space:nowrap}
+.bio-links span{padding:0 8px;color:#555}
+.section-header{padding:16px 20px}
+.section-header h2{margin:0 0 12px}
+ul{padding-left:20px;margin:12px 0 0}
+li{margin:5px 0}
+.news-date{font-variant-numeric:tabular-nums;white-space:nowrap}
+.papers{margin-top:0;gap:8px}
+.paper{grid-template-columns:192px minmax(0,1fr)}
+.paper-media{padding:16px 20px}
+.paper-media img{display:block;width:160px;height:120px;object-fit:contain;max-width:100%}
+.paper-info{padding:12px 20px 12px 8px}
+h3.papertitle{display:block;margin:0;font-size:14px;line-height:1.5}
+.paper-authors{text-wrap:initial;line-height:1.5;margin-top:2px}
+.paper-venue{margin-top:2px}
+.paper-links{margin-top:2px}
+.paper-links span{padding:0 3px}
+.paper-desc{margin:10px 0 0;line-height:1.5}
+.experience{margin:12px 0 0}
+.experience>div{display:grid;grid-template-columns:145px minmax(0,1fr);gap:12px;margin:12px 0}
+.experience dt{color:#555;font-size:13px;font-variant-numeric:tabular-nums}
+.experience dd{margin:0}
+.muted{font-size:12px;color:#777}
+.site-footer{margin:8px 20px 24px;text-align:center;font-size:12px;color:#666}
+.site-footer a{font-size:12px}
+.skip-link{position:absolute;left:12px;top:-60px;background:#fff;padding:8px;z-index:2}
+.skip-link:focus{top:8px}
+@media(max-width:600px){body{margin:0}.centered-bio{padding-top:22px}.centered-bio .bio-photo{padding:0 16px}.centered-bio .bio-photo img{width:148px;height:148px}.centered-bio .bio-text{padding:0 16px}.centered-bio .name{font-size:28px;margin:15px 0 18px}.chinese-name{font-size:19px}.section-header{padding:16px}.paper{grid-template-columns:124px minmax(0,1fr)}.paper-media{padding:12px 8px 12px 12px}.paper-media img{width:104px;height:100px}.paper-info{padding:12px 16px 12px 6px}.experience>div{grid-template-columns:104px minmax(0,1fr);gap:10px}.experience dt{font-size:12px}.bio-links span{padding:0 5px}}
+@media(max-width:380px){.paper{grid-template-columns:100px minmax(0,1fr)}.paper-media{padding-left:10px}.paper-media img{width:82px;height:92px}.paper-info{padding-left:5px}.chinese-name{display:block;margin:4px 0 0}.experience>div{grid-template-columns:88px minmax(0,1fr)}}
+@media print{.centered-bio{padding-top:0}.centered-bio .bio-photo img{width:115px;height:115px}.paper,.experience>div{break-inside:avoid}.site-footer{display:none}}

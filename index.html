@@ -13,86 +13,109 @@
   <meta property="og:image" content="https://thuecstasy.github.io/assets/profile.jpg">
   <link rel="canonical" href="https://thuecstasy.github.io/">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  <link rel="stylesheet" href="/assets/academic.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Zhaofeng Sun","alternateName":"孙照峰","url":"https://thuecstasy.github.io/","email":"sun-zf22@mails.tsinghua.edu.cn","sameAs":["https://github.com/thuEcstasy","https://huggingface.co/thuEcstasy1"],"knowsAbout":["Language model architectures","Machine learning systems","Model compression"]}</script>
-</head>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Zhaofeng Sun","alternateName":"孙照峰","url":"https://thuecstasy.github.io/","email":"sun-zf22@mails.tsinghua.edu.cn","sameAs":["https://scholar.google.com/citations?user=zKy3mzsAAAAJ","https://github.com/thuEcstasy","https://huggingface.co/thuEcstasy1"],"knowsAbout":["Language model architectures","Machine learning systems","Model compression"]}</script>
+<link rel="stylesheet" href="/assets/jon-barron/stylesheet.css"><link rel="stylesheet" href="/assets/homepage.css"><link rel="preload" href="/assets/jon-barron/fonts/S6uyw4BMUTPHjx4wXiWtFCc.woff2" as="font" type="font/woff2" crossorigin=""></head>
 <body>
-  <a class="skip-link" href="#about">Skip to content</a>
-  <main class="page">
-    <header class="profile" id="about">
-      <div class="profile-copy">
-        <h1>Zhaofeng Sun <span lang="zh">孙照峰</span></h1>
-        <p>I am an undergraduate in Computer Science at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>. Since June 2026, I have been conducting research with <a href="https://cseweb.ucsd.edu/~haozhang/">Prof. Hao Zhang</a> at <a href="https://haoailab.com/">UC San Diego’s Hao AI Lab</a>, working on efficient language model architectures and parallel decoding.</p>
-        <p>Previously, I worked with <a href="https://www.andrew.cmu.edu/user/beidic/">Prof. Beidi Chen</a> at Carnegie Mellon University and <a href="https://www.cs.cornell.edu/~cdesa/">Prof. Christopher De Sa</a> at Cornell University. At Tsinghua, I worked with <a href="https://ml.cs.tsinghua.edu.cn/~jianfei/">Prof. Jianfei Chen</a> and <a href="https://storage.cs.tsinghua.edu.cn/~lu/">Prof. Youyou Lu</a>.</p>
-        <p>My research focuses on making language models more capable under practical compute, latency, and memory constraints. I work across <strong>model architecture, training algorithms, and GPU systems</strong>.</p>
-        <nav class="social-links" aria-label="Contact and profiles" id="contact">
-          <a href="mailto:sun-zf22@mails.tsinghua.edu.cn">Email</a><span aria-hidden="true">/</span>
-          <a href="/cv/CV-ZhaofengSun.pdf">CV</a><span aria-hidden="true">/</span>
-          <a href="https://github.com/thuEcstasy">GitHub</a><span aria-hidden="true">/</span>
+    <a class="skip-link" href="#about">Skip to content</a>
+    <!-- Jon Barron academic website template, with the centered profile layout used by Lanxiang Hu. -->
+    <main class="page">
+      <header class="bio centered-bio" id="about">
+        <div class="bio-photo">
+          <a href="/assets/profile.jpg"><img src="/assets/profile.jpg" alt="Zhaofeng Sun" width="190" height="190" fetchpriority="high"></a>
+        </div>
+        <div class="bio-text">
+          <h1 class="name">Zhaofeng Sun <span class="chinese-name" lang="zh">孙照峰</span></h1>
+          <p>I am an undergraduate in Computer Science at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>. Since June 2026, I have been conducting research with <a href="https://cseweb.ucsd.edu/~haozhang/">Prof. Hao Zhang</a> at <a href="https://haoailab.com/">UC San Diego’s Hao AI Lab</a>, working on efficient language model architectures and parallel decoding.</p><p>Previously, I worked with <a href="https://www.andrew.cmu.edu/user/beidic/">Prof. Beidi Chen</a> at Carnegie Mellon University and <a href="https://www.cs.cornell.edu/~cdesa/">Prof. Christopher De Sa</a> at Cornell University. At Tsinghua, I worked with <a href="https://ml.cs.tsinghua.edu.cn/~jianfei/">Prof. Jianfei Chen</a> and <a href="https://storage.cs.tsinghua.edu.cn/~lu/">Prof. Youyou Lu</a>.</p><p>My research focuses on making language models more capable under practical compute, latency, and memory constraints. I work across <strong>model architecture, training algorithms, and GPU systems</strong>.</p>
+          <p class="bio-links" id="contact">
+          <a href="mailto:sun-zf22@mails.tsinghua.edu.cn">Email</a><span aria-hidden="true"> / </span>
+          <a href="/cv/CV-ZhaofengSun.pdf">CV</a><span aria-hidden="true"> / </span>
+          <a href="https://scholar.google.com/citations?user=zKy3mzsAAAAJ&amp;hl=en">Google Scholar</a><span aria-hidden="true"> / </span>
+          <a href="https://github.com/thuEcstasy">GitHub</a><span aria-hidden="true"> / </span>
           <a href="https://huggingface.co/thuEcstasy1">Hugging Face</a>
-        </nav>
-      </div>
-      <a class="portrait-link" href="/assets/profile.jpg" aria-label="View photo of Zhaofeng Sun"><img class="portrait" src="/assets/profile.jpg" width="220" height="220" alt="Zhaofeng Sun at Antelope Canyon" fetchpriority="high"></a>
-    </header>
+        </p>
+        </div>
+      </header>
 
-    <section class="section interests" aria-labelledby="research-heading">
-      <h2 id="research-heading">Research Interests</h2>
-      <ul>
+      <section class="section-header interests" aria-labelledby="interests-heading">
+        <h2 id="interests-heading">Research Interests</h2>
+        <ul>
         <li><strong>Efficient architectures:</strong> parallel and recurrent computation for language models.</li>
         <li><strong>Training and inference systems:</strong> sparse attention, long-context decoding, and efficient RL rollouts.</li>
         <li><strong>Model compression:</strong> quantization and structured sparsity through algorithm–hardware co-design.</li>
       </ul>
-    </section>
+      </section>
 
-    <section class="section" aria-labelledby="news-heading">
-      <h2 id="news-heading">News</h2>
-      <dl class="news">
-        <div><dt>Nov 2026</dt><dd>Released <a href="https://github.com/thuEcstasy/ForesightLoop">ForesightLoop</a>: code, <a href="https://huggingface.co/collections/thuEcstasy1/foresightloop-6af0ae0ca484a3099351831f">four- and eight-loop checkpoints</a>, and an <a href="https://foresightloop-demo.regal-vole-5301.chatgpt.site/">interactive demo</a>.</dd></div>
-        <div><dt>Jul 2026</dt><dd><a href="https://proceedings.mlr.press/v306/tseng26b.html">Model-Preserving Adaptive Rounding</a> appeared at ICML 2026.</dd></div>
-        <div><dt>Jun 2026</dt><dd><a href="https://arxiv.org/abs/2606.08446">Sparrow</a> is available, extending our sparse-rollout work presented at SPOT at ICLR 2026.</dd></div>
-      </dl>
-    </section>
+      <section class="section-header news-section" aria-labelledby="news-heading">
+        <h2 id="news-heading">News</h2>
+        <ul class="news">
+          <li><span class="news-date">[2026/11]</span> Released <a href="https://github.com/thuEcstasy/ForesightLoop">ForesightLoop</a>: code, <a href="https://huggingface.co/collections/thuEcstasy1/foresightloop-6af0ae0ca484a3099351831f">four- and eight-loop checkpoints</a>, and an <a href="https://foresightloop-demo.regal-vole-5301.chatgpt.site/">interactive demo</a>.</li>
+          <li><span class="news-date">[2026/04]</span> <a href="https://proceedings.mlr.press/v306/tseng26b.html">Model-Preserving Adaptive Rounding</a> was accepted to ICML 2026.</li>
+          <li><span class="news-date">[2026/03]</span> <a href="https://openreview.net/forum?id=vMrhhCAgCA">Sparse Attention for Efficient LLM Reinforcement Learning</a> was accepted to SPOT at ICLR 2026.</li>
+        </ul>
+      </section>
 
-    <section class="section" id="research" aria-labelledby="selected-heading">
-      <h2 id="selected-heading">Selected Research</h2>
-      <article class="paper featured">
-      <a class="paper-image" href="https://github.com/thuEcstasy/ForesightLoop" aria-label="ForesightLoop: Scaling Parallel Looped Transformers via Cross-Trajectory Latent Injection"><img src="/assets/foresightloop.svg" width="250" height="155" alt="Information flow between parallel loop stages in ForesightLoop" loading="lazy"></a>
-      <div class="paper-copy"><h3><a href="https://github.com/thuEcstasy/ForesightLoop">ForesightLoop: Scaling Parallel Looped Transformers via Cross-Trajectory Latent Injection</a></h3><p class="venue">Research project · UC San Diego · 2026</p><p>Reuses completed cross-trajectory representations to improve training stability and depth scaling while preserving parallel execution. With eight loops, improves average downstream accuracy by <strong>0.84 percentage points</strong> over vanilla PLT with <strong>0.3% additional decoding time</strong>.</p><div class="paper-links"><a href="https://foresightloop-demo.regal-vole-5301.chatgpt.site/">Project &amp; Demo</a><span aria-hidden="true">/</span><a href="https://github.com/thuEcstasy/ForesightLoop">Code</a><span aria-hidden="true">/</span><a href="https://huggingface.co/collections/thuEcstasy1/foresightloop-6af0ae0ca484a3099351831f">Models</a></div></div>
-    </article>
-<article class="paper">
-      <a class="paper-image" href="https://arxiv.org/abs/2606.08446" aria-label="Sparrow: Sparse Rollout for Stable and Efficient Long-context RL of Large Language Models"><img src="/assets/sparrow.png" width="250" height="155" alt="Sparrow sparse-rollout analysis" loading="lazy"></a>
-      <div class="paper-copy"><h3><a href="https://arxiv.org/abs/2606.08446">Sparrow: Sparse Rollout for Stable and Efficient Long-context RL of Large Language Models</a></h3><p class="authors">Yang Zhou, Ranajoy Sadhukhan, <strong>Zhaofeng Sun</strong>, Zhuoming Chen, Souvik Kundu, Saket Dingliwal, Sai Muralidhar Jayanthi, Aram Galstyan, Haizhong Zheng, Beidi Chen</p><p class="venue">Preprint, 2026</p><p>A dynamic sparse-attention schedule controls actor-policy mismatch for stable long-context reinforcement learning, delivering up to <strong>2.4× rollout speedup</strong>.</p><div class="paper-links"><a href="https://arxiv.org/abs/2606.08446">Paper</a><span aria-hidden="true">/</span><a href="https://openreview.net/forum?id=vMrhhCAgCA">Earlier version · SPOT at ICLR 2026</a></div></div>
-    </article>
-<article class="paper">
-      <a class="paper-image" href="https://proceedings.mlr.press/v306/tseng26b.html" aria-label="Model-Preserving Adaptive Rounding"><img src="/assets/yaqa.svg" width="250" height="155" alt="Model-preserving adaptive rounding analysis" loading="lazy"></a>
-      <div class="paper-copy"><h3><a href="https://proceedings.mlr.press/v306/tseng26b.html">Model-Preserving Adaptive Rounding</a></h3><p class="authors">Albert Tseng, <strong>Zhaofeng Sun</strong>, Christopher De Sa</p><p class="venue"><strong>ICML 2026</strong></p><p>YAQA targets full-model output error during post-training quantization. Kronecker-factored Hessian sketches reduce KL divergence by approximately <strong>30%</strong> over GPTQ/LDLQ without adding inference overhead.</p><div class="paper-links"><a href="https://proceedings.mlr.press/v306/tseng26b.html">Paper</a><span aria-hidden="true">/</span><a href="https://arxiv.org/abs/2505.22988">arXiv</a></div></div>
-    </article>
-    </section>
+      <section id="research" aria-labelledby="research-heading">
+        <div class="section-header"><h2 id="research-heading">Selected Research</h2></div>
+        <div class="papers">
+        <article class="paper">
+          <div class="paper-media"><a href="https://github.com/thuEcstasy/ForesightLoop" aria-label="ForesightLoop: Scaling Parallel Looped Transformers via Cross-Trajectory Latent Injection"><img src="/assets/foresightloop.svg" width="160" height="120" alt="Information flow between parallel loop stages in ForesightLoop" loading="lazy"></a></div>
+          <div class="paper-info">
+            <h3 class="papertitle"><a href="https://github.com/thuEcstasy/ForesightLoop">ForesightLoop: Scaling Parallel Looped Transformers via Cross-Trajectory Latent Injection</a></h3>
 
-    <section class="section" id="experience" aria-labelledby="experience-heading">
-      <h2 id="experience-heading">Experience</h2>
-      <dl class="experience">
+            <div class="paper-venue">Research project · UC San Diego · 2026</div>
+            <div class="paper-links"><a href="https://foresightloop-demo.regal-vole-5301.chatgpt.site/">Project &amp; Demo</a><span aria-hidden="true"> / </span><a href="https://github.com/thuEcstasy/ForesightLoop">Code</a><span aria-hidden="true"> / </span><a href="https://huggingface.co/collections/thuEcstasy1/foresightloop-6af0ae0ca484a3099351831f">Models</a></div>
+            <p class="paper-desc">Reuses completed cross-trajectory representations to improve training stability and depth scaling while preserving parallel execution. With eight loops, improves average downstream accuracy by <strong>0.84 percentage points</strong> over vanilla PLT with <strong>0.3% additional decoding time</strong>.</p>
+          </div>
+        </article><article class="paper">
+          <div class="paper-media"><a href="https://arxiv.org/abs/2606.08446" aria-label="Sparrow: Sparse Rollout for Stable and Efficient Long-context RL of Large Language Models"><img src="/assets/sparrow.png" width="160" height="120" alt="Sparrow sparse-rollout analysis" loading="lazy"></a></div>
+          <div class="paper-info">
+            <h3 class="papertitle"><a href="https://arxiv.org/abs/2606.08446">Sparrow: Sparse Rollout for Stable and Efficient Long-context RL of Large Language Models</a></h3>
+            <div class="paper-authors">Yang Zhou, Ranajoy Sadhukhan, <strong>Zhaofeng Sun</strong>, Zhuoming Chen, Souvik Kundu, Saket Dingliwal, Sai Muralidhar Jayanthi, Aram Galstyan, Haizhong Zheng, Beidi Chen</div>
+            <div class="paper-venue">Preprint, 2026</div>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2606.08446">Paper</a><span aria-hidden="true"> / </span><a href="https://openreview.net/forum?id=vMrhhCAgCA">Earlier version · SPOT at ICLR 2026</a></div>
+            <p class="paper-desc">A dynamic sparse-attention schedule controls actor-policy mismatch for stable long-context reinforcement learning, delivering up to <strong>2.4× rollout speedup</strong>.</p>
+          </div>
+        </article><article class="paper">
+          <div class="paper-media"><a href="https://proceedings.mlr.press/v306/tseng26b.html" aria-label="Model-Preserving Adaptive Rounding"><img src="/assets/yaqa.svg" width="160" height="120" alt="Model-preserving adaptive rounding analysis" loading="lazy"></a></div>
+          <div class="paper-info">
+            <h3 class="papertitle"><a href="https://proceedings.mlr.press/v306/tseng26b.html">Model-Preserving Adaptive Rounding</a></h3>
+            <div class="paper-authors">Albert Tseng, <strong>Zhaofeng Sun</strong>, Christopher De Sa</div>
+            <div class="paper-venue"><strong>ICML 2026</strong></div>
+            <div class="paper-links"><a href="https://proceedings.mlr.press/v306/tseng26b.html">Paper</a><span aria-hidden="true"> / </span><a href="https://arxiv.org/abs/2505.22988">arXiv</a></div>
+            <p class="paper-desc">YAQA targets full-model output error during post-training quantization. Kronecker-factored Hessian sketches reduce KL divergence by approximately <strong>30%</strong> over GPTQ/LDLQ without adding inference overhead.</p>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <section class="section-header" id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <dl class="experience">
         <div><dt>Jun 2026–Present</dt><dd><strong>UC San Diego · Hao AI Lab</strong><br>Research with Prof. Hao Zhang on efficient language model architectures.</dd></div>
         <div><dt>May–Aug 2025</dt><dd><strong>Carnegie Mellon University</strong><br>Research with Prof. Beidi Chen on sparse attention and efficient RL rollouts.</dd></div>
         <div><dt>Jan–May 2025</dt><dd><strong>Cornell University</strong><br>Research with Prof. Christopher De Sa on model-preserving quantization.</dd></div>
         <div><dt>Oct–Dec 2024</dt><dd><strong>Huawei Noah’s Ark Lab</strong><br>Research intern working on LLM inference and kernels for Ascend NPUs.</dd></div>
         <div><dt>Oct 2023–Jan 2025</dt><dd><strong>Tsinghua University</strong><br>Research with Prof. Jianfei Chen on model compression and efficient inference.</dd></div>
       </dl>
-    </section>
+      </section>
 
-    <section class="section" aria-labelledby="education-heading">
-      <h2 id="education-heading">Education</h2>
-      <dl class="experience">
+      <section class="section-header" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <dl class="experience">
         <div><dt>2022–2027<br><span class="muted">Expected</span></dt><dd><strong>Tsinghua University</strong><br>B.S. in Computer Science · GPA: 3.97/4.00 · Rank: 5/208</dd></div>
         <div><dt>Spring 2025</dt><dd><strong>Cornell University</strong><br>Exchange Student in Computer Science · GPA: 4.15/4.00</dd></div>
       </dl>
-    </section>
+      </section>
 
-    <section class="section" aria-labelledby="honors-heading">
-      <h2 id="honors-heading">Selected Honors</h2>
-      <ul class="honors"><li>Champion, Tsinghua University Supercomputer Competition, 2024.</li><li>Tsinghua University Comprehensive Excellence Scholarship, top 5%, 2023–2025.</li></ul>
-    </section>
-    <footer><span>Last updated November 2026</span><span>Layout inspired by <a href="https://snyhlx.github.io/">Lanxiang Hu</a> and <a href="https://jonbarron.info/">Jon Barron</a>.</span></footer>
-  </main>
-</body>
+      <section class="section-header" aria-labelledby="honors-heading">
+        <h2 id="honors-heading">Selected Honors</h2>
+        <ul class="honors"><li>Champion, Tsinghua University Supercomputer Competition, 2024.</li><li>Tsinghua University Comprehensive Excellence Scholarship, top 5%, 2023–2025.</li></ul>
+      </section>
+
+      <footer class="site-footer">
+        <p>Last updated November 2026.<br>
+        Website template from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>, following <a href="https://snyhlx.github.io/">Lanxiang Hu’s adaptation</a>.</p>
+      </footer>
+    </main>
+  </body>
 </html>

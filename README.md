@@ -2,12 +2,13 @@
 
 Static academic homepage for https://thuecstasy.github.io/.
 
-The presentation follows the compact academic layouts of Lanxiang Hu and Jon Barron. This independent implementation uses no build step and preserves the existing blog archives at their original URLs.
+Uses the actual Jon Barron academic website template, with the centered profile arrangement used by Lanxiang Hu. The upstream stylesheet is vendored in `assets/jon-barron/`, including locally served Lato fonts. Minimal site-specific adaptations are in `assets/homepage.css`. See `assets/jon-barron/UPSTREAM.md` for attribution and source provenance. No build step is required, and the existing blog archives retain their original URLs.
 
 ## Editing
 
 - `index.html`: biography, research, publications, experience, and education.
-- `assets/academic.css`: responsive layout and typography.
+- `assets/jon-barron/stylesheet.css`: upstream template typography and components.
+- `assets/homepage.css`: centered profile and responsive refinements.
 - `assets/`: profile photograph and research figures.
 - `cv/CV-ZhaofengSun.pdf`: current public CV.
 
