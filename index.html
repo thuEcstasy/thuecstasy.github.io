@@ -14,7 +14,7 @@
   <link rel="canonical" href="https://thuecstasy.github.io/">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Zhaofeng Sun","alternateName":"孙照峰","url":"https://thuecstasy.github.io/","email":"sun-zf22@mails.tsinghua.edu.cn","sameAs":["https://scholar.google.com/citations?user=zKy3mzsAAAAJ","https://github.com/thuEcstasy"],"knowsAbout":["Language model architectures","Machine learning systems","Model compression"]}</script>
-<link rel="stylesheet" href="/assets/jon-barron/stylesheet.css"><link rel="stylesheet" href="/assets/homepage.css"><link rel="preload" href="/assets/jon-barron/fonts/S6uyw4BMUTPHjx4wXiWtFCc.woff2" as="font" type="font/woff2" crossorigin=""></head>
+<link rel="stylesheet" href="/assets/jon-barron/stylesheet.css"><link rel="stylesheet" href="/assets/homepage.css"><link rel="preload" href="/assets/jon-barron/fonts/S6uyw4BMUTPHjx4wXiWtFCc.woff2" as="font" type="font/woff2" crossorigin=""><script src="/assets/paper-tags.js" defer></script></head>
 <body>
     <a class="skip-link" href="#about">Skip to content</a>
     <!-- Jon Barron academic website template, with the centered profile layout used by Lanxiang Hu. -->
@@ -54,42 +54,48 @@
       </section>
 
       <section id="research" aria-labelledby="research-heading">
-        <div class="section-header"><h2 id="research-heading">Selected Research</h2></div>
-        <div class="papers">
-        <article class="paper">
+        <div class="section-header">
+          <h2 id="research-heading">Selected Research</h2>
+          <div class="research-filter" id="research-filter" hidden>
+            <span id="research-filter-label" role="status" aria-live="polite"></span>
+            <button type="button" id="research-show-all">Show all</button>
+          </div>
+        </div>
+        <div class="papers" id="research-papers">
+        <article class="paper" data-topics="looped-models efficient-inference">
           <div class="paper-media"><a href="https://github.com/thuEcstasy/ForesightLoop" aria-label="ForesightLoop: Scaling Parallel Looped Transformers via Cross-Trajectory Latent Injection"><img src="/assets/foresightloop.svg" width="160" height="120" alt="Information flow between parallel loop stages in ForesightLoop" loading="lazy"></a></div>
           <div class="paper-info">
             <h3 class="papertitle"><a href="https://github.com/thuEcstasy/ForesightLoop">ForesightLoop: Scaling Parallel Looped Transformers via Cross-Trajectory Latent Injection</a></h3>
 
             <div class="paper-venue">Research project · UC San Diego · 2026</div>
             <div class="paper-links"><a href="https://foresightloop-demo.regal-vole-5301.chatgpt.site/">Project &amp; Demo</a><span aria-hidden="true"> / </span><a href="https://github.com/thuEcstasy/ForesightLoop">Code</a><span aria-hidden="true"> / </span><a href="https://huggingface.co/collections/thuEcstasy1/foresightloop-6af0ae0ca484a3099351831f">Models</a></div>
-            <ul class="paper-keywords">
-              <li>Looped models</li>
-              <li>Efficient inference</li>
-            </ul>
+            <div class="paper-keywords" aria-label="Research topics">
+              <button class="paper-tag" type="button" data-topic="looped-models" aria-controls="research-papers" aria-pressed="false">Looped models</button>
+              <button class="paper-tag" type="button" data-topic="efficient-inference" aria-controls="research-papers" aria-pressed="false">Efficient inference</button>
+            </div>
           </div>
-        </article><article class="paper">
+        </article><article class="paper" data-topics="sparse-attention efficient-post-training">
           <div class="paper-media"><a href="https://arxiv.org/abs/2606.08446" aria-label="Sparrow: Sparse Rollout for Stable and Efficient Long-context RL of Large Language Models"><img src="/assets/sparrow-stability.svg" width="160" height="120" alt="Sparrow maintains stable reinforcement learning with sparse rollouts, closely tracking the dense-rollout baseline" loading="lazy"></a></div>
           <div class="paper-info">
             <h3 class="papertitle"><a href="https://arxiv.org/abs/2606.08446">Sparrow: Sparse Rollout for Stable and Efficient Long-context RL of Large Language Models</a></h3>
             <div class="paper-authors">Yang Zhou, Ranajoy Sadhukhan, <strong>Zhaofeng Sun</strong>, Zhuoming Chen, Souvik Kundu, Saket Dingliwal, Sai Muralidhar Jayanthi, Aram Galstyan, Haizhong Zheng, Beidi Chen</div>
             <div class="paper-venue">Preprint, 2026</div>
             <div class="paper-links"><a href="https://arxiv.org/abs/2606.08446">Paper</a><span aria-hidden="true"> / </span><a href="https://openreview.net/forum?id=vMrhhCAgCA">Earlier version · SPOT at ICLR 2026</a></div>
-            <ul class="paper-keywords">
-              <li>Sparse attention</li>
-              <li>Efficient post-training</li>
-            </ul>
+            <div class="paper-keywords" aria-label="Research topics">
+              <button class="paper-tag" type="button" data-topic="sparse-attention" aria-controls="research-papers" aria-pressed="false">Sparse attention</button>
+              <button class="paper-tag" type="button" data-topic="efficient-post-training" aria-controls="research-papers" aria-pressed="false">Efficient post-training</button>
+            </div>
           </div>
-        </article><article class="paper">
+        </article><article class="paper" data-topics="post-training-quantization">
           <div class="paper-media"><a href="https://proceedings.mlr.press/v306/tseng26b.html" aria-label="Model-Preserving Adaptive Rounding"><img src="/assets/mopar-overview.jpg" width="160" height="120" alt="YAQA graphical abstract showing lower output-distribution error after low-bit quantization" loading="lazy"></a></div>
           <div class="paper-info">
             <h3 class="papertitle"><a href="https://proceedings.mlr.press/v306/tseng26b.html">Model-Preserving Adaptive Rounding</a></h3>
             <div class="paper-authors">Albert Tseng, <strong>Zhaofeng Sun</strong>, Christopher De Sa</div>
             <div class="paper-venue"><strong>ICML 2026</strong></div>
             <div class="paper-links"><a href="https://proceedings.mlr.press/v306/tseng26b.html">Paper</a><span aria-hidden="true"> / </span><a href="https://arxiv.org/abs/2505.22988">arXiv</a></div>
-            <ul class="paper-keywords">
-              <li>Post-training quantization</li>
-            </ul>
+            <div class="paper-keywords" aria-label="Research topics">
+              <button class="paper-tag" type="button" data-topic="post-training-quantization" aria-controls="research-papers" aria-pressed="false">Post-training quantization</button>
+            </div>
           </div>
         </article>
         </div>
