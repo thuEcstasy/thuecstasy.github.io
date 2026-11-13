@@ -28,7 +28,8 @@ h3.papertitle{display:block;margin:0;font-size:14px;line-height:1.5}
 .paper-venue{margin-top:2px}
 .paper-links{margin-top:2px}
 .paper-links span{padding:0 3px}
-.paper-desc{margin:10px 0 0;line-height:1.5}
+.paper-keywords{margin:8px 0 0;padding-left:18px;line-height:1.5}
+.paper-keywords li{margin:1px 0}
 .experience{margin:12px 0 0}
 .experience>div{display:grid;grid-template-columns:145px minmax(0,1fr);gap:12px;margin:12px 0}
 .experience dt{color:#555;font-size:13px;font-variant-numeric:tabular-nums}
