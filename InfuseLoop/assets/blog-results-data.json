@@ -1,0 +1,155 @@
+{
+  "models": [
+    {
+      "id": "single",
+      "architecture": "single",
+      "loops": 1,
+      "loss": 2.9941,
+      "accuracy": 41.085833588511704,
+      "seconds": 6.907221432775259
+    },
+    {
+      "id": "lt4",
+      "architecture": "lt",
+      "loops": 4,
+      "loss": 2.9022,
+      "accuracy": 43.47539881645504,
+      "seconds": 32.15059030242264
+    },
+    {
+      "id": "plt4",
+      "architecture": "plt",
+      "loops": 4,
+      "loss": 2.9252,
+      "accuracy": 42.041264648047346,
+      "seconds": 7.727172017097473
+    },
+    {
+      "id": "foresight4",
+      "architecture": "foresight",
+      "loops": 4,
+      "loss": 2.9112,
+      "accuracy": 42.99666107890452,
+      "seconds": 7.7480554189532995
+    },
+    {
+      "id": "plt8",
+      "architecture": "plt",
+      "loops": 8,
+      "loss": 2.9365,
+      "accuracy": 42.227349963490774,
+      "seconds": 8.494108185172081
+    },
+    {
+      "id": "foresight8",
+      "architecture": "foresight",
+      "loops": 8,
+      "loss": 2.9058,
+      "accuracy": 43.07210362649706,
+      "seconds": 8.515413641929626
+    },
+    {
+      "id": "lt8",
+      "architecture": "lt",
+      "loops": 8,
+      "loss": 2.8775,
+      "accuracy": 43.66286609393178,
+      "seconds": 65.62719668261707
+    }
+  ],
+  "pareto_members": {
+    "loss": [
+      "single",
+      "plt4",
+      "foresight4",
+      "foresight8",
+      "lt4",
+      "lt8"
+    ],
+    "accuracy": [
+      "single",
+      "plt4",
+      "foresight4",
+      "foresight8",
+      "lt4",
+      "lt8"
+    ]
+  },
+  "context_b32": {
+    "plt": [
+      {
+        "context": 512,
+        "throughput_percent": 73.45834140209044
+      },
+      {
+        "context": 2048,
+        "throughput_percent": 78.61344087055069
+      },
+      {
+        "context": 8192,
+        "throughput_percent": 86.6195650102751
+      }
+    ],
+    "foresight": [
+      {
+        "context": 512,
+        "throughput_percent": 73.50624605202279
+      },
+      {
+        "context": 2048,
+        "throughput_percent": 78.55450891213462
+      },
+      {
+        "context": 8192,
+        "throughput_percent": 86.54150173904847
+      }
+    ]
+  },
+  "analytical_cache": [
+    {
+      "loops": 4,
+      "context": [
+        512,
+        2048,
+        8192
+      ],
+      "extra_percent": [
+        37.520926339285715,
+        9.380231584821429,
+        2.345057896205357
+      ]
+    },
+    {
+      "loops": 8,
+      "context": [
+        512,
+        2048,
+        8192
+      ],
+      "extra_percent": [
+        87.548828125,
+        21.88720703125,
+        5.4718017578125
+      ]
+    }
+  ],
+  "perplexity_at_8_loops": {
+    "PLT": {
+      "WikiText-2": 36.82,
+      "LAMBADA": 50.69
+    },
+    "InfuseLoop": {
+      "WikiText-2": 35.55,
+      "LAMBADA": 42.04
+    }
+  },
+  "protocol": {
+    "gpu": "NVIDIA GB200",
+    "batch": 32,
+    "prompt_tokens": 2048,
+    "output_tokens": 2048,
+    "timing": "Median of 3 synchronized decode-only runs; 2047 cached steps, prefill excluded",
+    "context_sweep": "64 decoding cycles, context starts at 512/2048/8192, median of 3"
+  },
+  "note": "Only measured R=1,4,8 quality/latency observations. Lines connect observations, not fitted points. Pareto frontiers include LT and PLT-4 as well as InfuseLoop. Cache overhead is analytical, not peak GPU memory."
+}

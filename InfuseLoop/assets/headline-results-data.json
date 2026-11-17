@@ -1,0 +1,41 @@
+{
+  "loop_count": 8,
+  "perplexity": {
+    "WikiText-2": [
+      33.78,
+      36.82,
+      35.55
+    ],
+    "LAMBADA": [
+      35.04,
+      50.69,
+      42.04
+    ]
+  },
+  "series_order": [
+    "LT",
+    "PLT",
+    "InfuseLoop"
+  ],
+  "accuracy_percent": {
+    "LT": 43.66286609393178,
+    "PLT": 42.227349963490774,
+    "InfuseLoop": 43.07210362649706,
+    "Single": 41.085833588511704
+  },
+  "decoding_seconds": {
+    "LT": 65.62719668261707,
+    "PLT": 8.494108185172081,
+    "InfuseLoop": 8.515413641929626
+  },
+  "quality_source": "Paper Table 1; blog-results-data.json",
+  "latency_protocol": {
+    "gpu": "NVIDIA GB200",
+    "batch": 32,
+    "prompt_tokens": 2048,
+    "output_tokens": 2048,
+    "timing": "Median of 3 synchronized decode-only runs; 2047 cached steps, prefill excluded",
+    "context_sweep": "64 decoding cycles, context starts at 512/2048/8192, median of 3"
+  },
+  "note": "Perplexity and latency bars start at zero. Accuracy is a dot plot with a labelled percent axis. These benchmarks are independent of the illustrative continuation playback."
+}
