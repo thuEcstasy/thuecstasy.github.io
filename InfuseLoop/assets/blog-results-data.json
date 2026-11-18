@@ -151,5 +151,27 @@
     "timing": "Median of 3 synchronized decode-only runs; 2047 cached steps, prefill excluded",
     "context_sweep": "64 decoding cycles, context starts at 512/2048/8192, median of 3"
   },
-  "note": "Only measured R=1,4,8 quality/latency observations. Lines connect observations, not fitted points. Pareto frontiers include LT and PLT-4 as well as InfuseLoop. Cache overhead is analytical, not peak GPU memory."
+  "note": "Only measured R=1,4,8 observations; no fitted or synthetic points. The displayed Pareto plots focus on Single and parallel models, with LT latency identified by an off-scale arrow. The complete measured data and Pareto membership retain LT. Cache overhead is analytical, not peak GPU memory.",
+  "pareto_display": {
+    "shown_models": [
+      "single",
+      "plt4",
+      "foresight4",
+      "plt8",
+      "foresight8"
+    ],
+    "omitted_from_plot_only": [
+      "lt4",
+      "lt8"
+    ],
+    "latency_axis": "linear",
+    "annotation": {
+      "serial_model": "lt4",
+      "parallel_model": "foresight8",
+      "latency_ratio": 3.7755758738617415,
+      "loss_difference": 0.0036000000000000476,
+      "quality_match": "Similar measured validation loss, not an exact matched-loss measurement.",
+      "accuracy_comparison": "LT-4 has higher measured accuracy; no matched-accuracy claim."
+    }
+  }
 }
