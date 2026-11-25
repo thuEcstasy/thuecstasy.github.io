@@ -26,8 +26,7 @@
   "decoding_seconds": {
     "LT": 65.62719668261707,
     "PLT": 8.494108185172081,
-    "InfuseLoop": 8.515413641929626,
-    "Single": 6.907221432775259
+    "InfuseLoop": 8.515413641929626
   },
   "quality_source": "Paper Table 1; blog-results-data.json",
   "latency_protocol": {
@@ -38,11 +37,5 @@
     "timing": "Median of 3 synchronized decode-only runs; 2047 cached steps, prefill excluded",
     "context_sweep": "64 decoding cycles, context starts at 512/2048/8192, median of 3"
   },
-  "note": "Measured decode-only latency for Single, LT-8, PLT-8, and InfuseLoop-8. Parallel-range panel uses a 0\u201313 s scale; LT-8 is shown in a separate 0\u201370 s panel. Latency is median of 3 synchronized runs on one GB200, B=32, 2K prompt and 2K output; prefill excluded.",
-  "latency_ratios_vs_single": {
-    "Single": 1.0,
-    "LT-8": 9.501244070620254,
-    "PLT-8": 1.2297431417019484,
-    "InfuseLoop-8": 1.2328276608483089
-  }
+  "note": "Perplexity and latency bars start at zero. Accuracy is a dot plot with a labelled percent axis. These benchmarks are independent of the illustrative continuation playback."
 }
